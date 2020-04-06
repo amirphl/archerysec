@@ -5,7 +5,7 @@
     <!--breadcrumbs-->
     <div id="content-header">
         <div id="breadcrumb"><a href="/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>
-            Home</a></div>
+            خانه</a></div>
     </div>
     <div class="container-fluid">
         <hr>
@@ -13,48 +13,48 @@
             <div class="span5 offset3">
                 <div class="widget-box">
                     <div class="widget-title"><span class="icon"> <i class="icon-align-justify"></i> </span>
-                        <h5>Edit Project</h5>
+                        <h5>ویرایش پروژه</h5>
                     </div>
                     <div class="widget-content nopadding">
                         <form class="form-horizontal" method="POST" action="{% url 'projects:project_edit' %}">{% csrf_token %}
                             <input type="hidden" name="project_id" value="{{ data.project_id }}"/>
                             <div class="control-group">
-                                <label class="control-label">Project Name :</label>
+                                <label class="control-label">نام پروژه</label>
                                 <div class="controls">
                                     <input type="text" name="projectname"
                                            value="{{ data.project_name }}" class="span11"/>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Project Start Date :</label>
+                                <label class="control-label">تاریخ شروع پروژه: </label>
                                 <div class="controls">
                                     <input type="date" name="projectstart"
                                            value="{{ data.project_start }}" class="span11"/>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Project End date :</label>
+                                <label class="control-label">تاریخ پایان پروژه: </label>
                                 <div class="controls">
                                     <input type="date" name="projectend"
                                            value="{{ data.project_end }}" class="span11"/>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Project Owner :</label>
+                                <label class="control-label">سازنده پروژه: </label>
                                 <div class="controls">
                                     <input type="text" name="projectowner"
                                            value="{{ data.project_owner }}" class="span11"/>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Project Summary :</label>
+                                <label class="control-label">خلاصه پروژه: </label>
                                 <div class="controls">
                                     <textarea name="project_disc"
                                                class="span11"> {{data.project_disc}}</textarea>
                                 </div>
                             </div>
                             <div class="form-actions">
-                                <button type="submit" class="btn btn-success">Save</button>
+                                <button type="submit" class="btn btn-success">ذخیره</button>
                             </div>
                         </form>
                     </div>

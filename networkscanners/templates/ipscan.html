@@ -11,7 +11,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-md-flex align-items-center">
-                            <h1 class="card-title">Infrastructure Scan </h1>
+                            <h1 class="card-title">اسکن زیرساختی </h1>
                         </div>
                         <br>
                         <div class="row">
@@ -33,7 +33,7 @@
                                             <div class="card-body">
                                                 <h5 class="card-title"></h5>
                                                 <div class="form-group row">
-                                                    <label class="col-md-3 m-t-15">Projects</label>
+                                                    <label class="col-md-3 m-t-15">پروژه‌ها</label>
                                                     <div class="col-md-9">
                                                         <select id="project_id" name="project_id"
                                                                 class="select2 form-control custom-select"
@@ -49,10 +49,9 @@
                                             </div>
                                             <div class="card-body">
                                                 <div class="controls">
-                                                    <input type="submit" class="btn btn-primary" value="Launch">
+                                                    <input type="submit" class="btn btn-primary" value="اجرا">
                                                     <a href="{% url 'networkscanners:net_scan_schedule' %}"
-                                                       class="btn btn-success">Scan
-                                                        Schedule</a>
+                                                       class="btn btn-success">برنامه ریزی اسکن</a>
                                                 </div>
                                                 <div id='status'></div>
                                             </div>
@@ -67,10 +66,10 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-md-flex align-items-center">
-                            <h5 class="card-title">Scanners </h5>
+                            <h5 class="card-title">اسکنرها </h5>
                         </div>
                         <br>
-                        <p>Select your scanner(s) from the ones available:</p>
+                        <p>اسکنر(های) خود را از موارد موجود انتخاب کنید: </p>
                         <div class="custom-control custom-control-inline">
                             <div class="checkbox inline checkbox-slider--b-flat checkbox-slider--b"
                                  style="width: 200px;">
@@ -148,9 +147,9 @@ $(document).on('submit', '#start_scan', function(e){
         });
     }
     if (opt) {
-        $('#status').text('Scan launched.').css ({'color': '#5bb75b', 'margin-left': '200px'});
+        $('#status').text('اسکن اجرا شد.').css ({'color': '#5bb75b', 'margin-left': '200px'});
     } else {
-        $('#status').text("The scan can't launched: no scanner selected.").css({'color': '#b94a48', 'margin-left': '200px'});
+        $('#status').text("اسکن انجام نشد زیرا اسکنری انتخاب نشده است.").css({'color': '#b94a48', 'margin-left': '200px'});
     }
 });
 

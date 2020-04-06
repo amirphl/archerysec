@@ -44,11 +44,11 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="float-right">
-                            <button type="button" class="btn btn-danger btn-mini" onclick="">Delete Selected</button>
+                            <button type="button" class="btn btn-danger btn-mini" onclick="">پاک کردن مورد انتخاب شده</button>
                         </div>
                         <br>
                         <div class="d-md-flex align-items-center">
-                            <h1 class="card-title">Vulnerability List</h1>
+                            <h1 class="card-title">لیست آسیب پذیری‌ها</h1>
                         </div>
                         <br>
                         <div class="row">
@@ -57,13 +57,13 @@
                                     <thead>
                                     <tr>
                                         <th><p><label><input type="checkbox" id="checkAll"/></label></p></th>
-                                        <th>Vulnerability</th>
-                                        <th>Severity</th>
-                                        <th>Host</th>
-                                        <th>Location</th>
-                                        <th>JIRA Ticket</th>
+                                        <th>آسیب پذیری</th>
+                                        <th>دقت</th>
+                                        <th>میزبان</th>
+                                        <th>موقعیت</th>
+                                        <th>تیکت JIRA</th>
                                         <th>False Positive</th>
-                                        <th>Status</th>
+                                        <th>وضعیت</th>
                                         <th></th>
                                         <!--<th></th>-->
                                         <th></th>
@@ -96,7 +96,7 @@
                                                 <input type="hidden" name="scan_id" value="{{scan_id}}">
                                                 <input type="hidden" name="false" value="Yes">
                                                 <input type="hidden" name="status" value="Open">
-                                                <button class="btn btn-info btn-mini">Yes</button>
+                                                <button class="btn btn-info btn-mini">باشه</button>
                                             </form>
                                         </td>
                                         <td>
@@ -119,7 +119,7 @@
                                                 <input type="hidden" name="scan_id" value="{{scan_id}}">
                                                 <input type="hidden" name="false" value="No">
                                                 <input type="hidden" name="status" value="Closed">
-                                                <button class="btn btn-danger btn-mini">Close</button>
+                                                <button class="btn btn-danger btn-mini">بستن</button>
                                             </form>
                                         </td>
                                     </tr>
@@ -135,7 +135,7 @@
                     <div class="card-body">
                         <br>
                         <div class="d-md-flex align-items-center">
-                            <h1 class="card-title">False Positive Vulnerability List</h1>
+                            <h1 class="card-title">False Positive لیست آسیب پذیری‌های</h1>
                         </div>
                         <br>
                         <div class="row">
@@ -144,11 +144,11 @@
                                     <thead>
                                     <tr>
                                         <th><p><label><input type="checkbox" id="checkAll"/></label></p></th>
-                                        <th>Vulnerability</th>
-                                        <th>Criticality</th>
-                                        <th>Severity</th>
-                                        <th>Host</th>
-                                        <th>Location</th>
+                                        <th>آسیب پذیری</th>
+                                        <th>شدت</th>
+                                        <th>دقت</th>
+                                        <th>میزبان</th>
+                                        <th>موقعیت</th>
                                         <th>False Positive</th>
 
                                         <th></th>
@@ -207,11 +207,11 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="float-right">
-                            <button type="button" class="btn btn-danger btn-mini" onclick="">Delete Selected</button>
+                            <button type="button" class="btn btn-danger btn-mini" onclick="">پاک کردن مورد انتخاب شده</button>
                         </div>
                         <br>
                         <div class="d-md-flex align-items-center">
-                            <h1 class="card-title">Closed Vulnerability List</h1>
+                            <h1 class="card-title">لیست آسیب پذیری‌های بسته شده</h1>
                         </div>
                         <br>
                         <div class="row">
@@ -220,13 +220,13 @@
                                     <thead>
                             <tr>
                                 <th><p><label><input type="checkbox" id="checkAll"/></label></p></th>
-                                <th>Vulnerability</th>
-                                <th>Criticality</th>
-                                <th>Severity</th>
-                                <th>Host</th>
-                                <th>Location</th>
+                                <th>آسیب پذیری</th>
+                                <th>شدت</th>
+                                <th>دقت</th>
+                                <th>میزبان</th>
+                                <th>موقعیت</th>
                                 <th>False Positive</th>
-                                <th>Status</th>
+                                <th>وضعیت</th>
                                 <th></th>
                                 <th></th>
                             </tr>

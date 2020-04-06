@@ -47,13 +47,13 @@
                         <div class="float-right">
                             <div class="btn-group" role="group" aria-label="Basic example">
                                 <a href="{% url 'networkscanners:OpenVAS_xml_upload' %}" class="btn btn-primary btn-mini"><i
-                                        class="icon-upload-alt"></i> Upload XML</a>
+                                        class="icon-upload-alt"></i> آپلود XML</a>
                             </div>
-                            <button type="button" class="btn btn-danger btn-mini" onclick="">Delete Selected</button>
+                            <button type="button" class="btn btn-danger btn-mini" onclick="">پاک کردن مورد انتخاب شده</button>
                         </div>
                         <br>
                         <div class="d-md-flex align-items-center">
-                            <h1 class="card-title">OpenVAS Scan List</h1>
+                            <h1 class="card-title">لیست اسکن OpenVAS</h1>
                         </div>
                         <br>
                         <div class="row">
@@ -67,14 +67,14 @@
                                             <span class="checkmark"></span>
                                         </label></th>
                                         <th>IP</th>
-                                        <th>Date Time</th>
-                                        <th>Status</th>
-                                        <th>Total</th>
-                                        <th>High</th>
-                                        <th>Medium</th>
-                                        <th>Low</th>
-                                        <th>Log</th>
-                                        <th>Duplicate</th>
+                                        <th>زمان</th>
+                                        <th>وضعیت</th>
+                                        <th>کل</th>
+                                        <th>زیاد</th>
+                                        <th>متوسط</th>
+                                        <th>کم</th>
+                                        <th>لاگ</th>
+                                        <th>تکراری</th>
                                         <th></th>
                                     </tr>
                                     </thead>
@@ -97,7 +97,7 @@
                                         <td width="20%">
                                             <div>
                                                 <div class="d-flex no-block align-items-center">
-                                                    <span>{{data.scan_status}}{{data.vul_status}}% Completed</span>
+                                                    <span>{{data.scan_status}}{{data.vul_status}}% کامل شده </span>
                                                 </div>
                                                 <div class="progress{% if data.scan_status != '100.0' %} active progress-striped{% endif %}">
                                                     <div class="progress-bar progress-bar-striped" role="progressbar"

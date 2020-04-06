@@ -3,8 +3,9 @@
     <div class="col-md-6 col-lg-2 col-xlg-3">
         <div class="card card-hover">
             <div class="box bg-danger text-center">
-                <h1 class="font-light text-white">{{all_high}}</h1>
-                <a href="{% url 'dashboard:all_high_vuln' %}?project_id={{project_id}}&severity=High"><h6 class="text-white"> High</h6></a>
+                <h1 class="font-light text-white">{{ all_high }}</h1>
+                <a href="{% url 'dashboard:all_high_vuln' %}?project_id={{ project_id }}&severity=High"><h6
+                        class="text-white"> زیاد</h6></a>
             </div>
         </div>
     </div>
@@ -12,8 +13,9 @@
     <div class="col-md-6 col-lg-2 col-xlg-3">
         <div class="card card-hover">
             <div class="box bg-warning text-center">
-                <h1 class="font-light text-white">{{all_medium}}</i></h1>
-                <a href="{% url 'dashboard:all_high_vuln' %}?project_id={{project_id}}&severity=Medium"><h6 class="text-white">Medium</h6></a>
+                <h1 class="font-light text-white">{{ all_medium }}</i></h1>
+                <a href="{% url 'dashboard:all_high_vuln' %}?project_id={{ project_id }}&severity=Medium"><h6
+                        class="text-white">متوسط</h6></a>
             </div>
         </div>
     </div>
@@ -21,8 +23,9 @@
     <div class="col-md-6 col-lg-2 col-xlg-3">
         <div class="card card-hover">
             <div class="box bg-cyan text-center">
-                <h1 class="font-light text-white">{{all_low}}</h1>
-                <a href="{% url 'dashboard:all_high_vuln' %}?project_id={{project_id}}&severity=Low"><h6 class="text-white">Low</h6></a>
+                <h1 class="font-light text-white">{{ all_low }}</h1>
+                <a href="{% url 'dashboard:all_high_vuln' %}?project_id={{ project_id }}&severity=Low"><h6
+                        class="text-white">کم</h6></a>
             </div>
         </div>
     </div>
@@ -30,8 +33,9 @@
     <div class="col-md-6 col-lg-2 col-xlg-3">
         <div class="card card-hover">
             <div class="box bg-info text-center">
-                <h1 class="font-light text-white">{{tota_vuln}}</h1>
-                <a href="{% url 'dashboard:all_high_vuln' %}?project_id={{project_id}}&severity=Total"><h6 class="text-white">Total</h6></a>
+                <h1 class="font-light text-white">{{ tota_vuln }}</h1>
+                <a href="{% url 'dashboard:all_high_vuln' %}?project_id={{ project_id }}&severity=Total"><h6
+                        class="text-white">کل</h6></a>
             </div>
         </div>
     </div>
@@ -39,8 +43,9 @@
     <div class="col-md-6 col-lg-2 col-xlg-3">
         <div class="card card-hover">
             <div class="box bg-success text-center">
-                <h1 class="font-light text-white">{{all_closed_vuln}}</h1>
-                <a href="{% url 'dashboard:all_high_vuln' %}?project_id={{project_id}}&severity=Close"> <h6 class="text-white">Closed</h6></a>
+                <h1 class="font-light text-white">{{ all_closed_vuln }}</h1>
+                <a href="{% url 'dashboard:all_high_vuln' %}?project_id={{ project_id }}&severity=Close"><h6
+                        class="text-white">بسته شده</h6></a>
             </div>
         </div>
     </div>
@@ -49,8 +54,9 @@
     <div class="col-md-6 col-lg-2 col-xlg-3">
         <div class="card card-hover">
             <div class="box bg-danger text-center">
-                <h1 class="font-light text-white">{{all_false_positive}}</h1>
-                <a href="{% url 'dashboard:all_high_vuln' %}?project_id={{project_id}}&severity=False"><h6 class="text-white">False Positive</h6></a>
+                <h1 class="font-light text-white">{{ all_false_positive }}</h1>
+                <a href="{% url 'dashboard:all_high_vuln' %}?project_id={{ project_id }}&severity=False"><h6
+                        class="text-white">False Positive</h6></a>
             </div>
         </div>
     </div>

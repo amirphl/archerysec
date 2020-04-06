@@ -36,7 +36,7 @@
 
 
 $(document).on('click', '.confirm-delete', function(){
-    return confirm('Are you sure you want to delete this?');
+    return confirm('مطمئن هستید؟');
 })
 
 
@@ -51,12 +51,12 @@ $(document).on('click', '.confirm-delete', function(){
                 <div class="card">
                     <div class="card-body">
                         <div class="float-right">
-                            <button type="button" class="btn btn-danger btn-mini" onclick="">Delete Selected</button>
+                            <button type="button" class="btn btn-danger btn-mini" onclick="">پاک کردن مورد انتخاب شده</button>
                         </div>
                         <br>
                         <br>
                         <div class="d-md-flex align-items-center">
-                            <h1 class="card-title">Nikto Scan List</h1>
+                            <h1 class="card-title">لیست اسکن Nikto</h1>
                         </div>
                         <br>
                         <div class="row">
@@ -69,8 +69,8 @@ $(document).on('click', '.confirm-delete', function(){
                                             <span class="checkmark"></span>
                                         </label></th>
                                         <th>URL</th>
-                                        <th>Date</th>
-                                        <th>Action</th>
+                                        <th>تاریخ</th>
+                                        <th>اقدام</th>
                                     </tr>
                                     </thead>
                                     <tbody>{% for data in all_nikto %}

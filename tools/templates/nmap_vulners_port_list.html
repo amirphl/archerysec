@@ -6,12 +6,12 @@
 <div id="content">
     <div id="content-header">
         <div id="breadcrumb">
-            <a href="/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-            <a href="/tools/nmap_vulners/?ip={{ ip | escape }}">Scan results</a>
-            <a href="#" class="current">Port scan results</a>
+            <a href="/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> خانه</a>
+            <a href="/tools/nmap_vulners/?ip={{ ip | escape }}">نتایج اسکن</a>
+            <a href="#" class="current">نتایج اسکن port</a>
         </div>
 
-        <h1>Vulners port scan Result for {{ ip | escape}}:{{ port | escape }}</h1>
+        <h1>نتیجه اسکن پورت برای {{ ip | escape}}:{{ port | escape }}</h1>
     </div>
 
     <div class="container-fluid">
@@ -32,15 +32,15 @@
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
-                        <h5>nmap_vulners port scan result</h5>
+                        <h5>نتیجه اسکن پورت nmap</h5>
                     </div>
                     <div class="widget-content nopadding">
                         <table class="table table-bordered data-table">
                             <thead>
                             <tr>
                                 <th>CVE</th>
-                                <th>CVSS Score</th>
-                                <th>Link</th>
+                                <th>امتیاز CVSS</th>
+                                <th>لینک</th>
                             </tr>
                             </thead>
                             <tbody>{% for data in cve_info %}

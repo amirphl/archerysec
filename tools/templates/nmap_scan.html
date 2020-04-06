@@ -49,15 +49,15 @@
                         <div class="float-right">
                             <div class="btn-group" role="group" aria-label="Basic example">
                                 <a href="{% url 'networkscanners:OpenVAS_xml_upload' %}" class="btn btn-primary btn-mini"><i
-                                        class="icon-upload-alt"></i> Upload XML</a>
+                                        class="icon-upload-alt"></i>آپلود XML</a>
                             </div>
-                            <button type="button" class="btn btn-danger btn-mini" onclick="">Delete Selected</button>
+                            <button type="button" class="btn btn-danger btn-mini" onclick="">پاک کردن مورد انتخاب شده</button>
                         </div>
                         <br>
                         <br>
                         <br>
                         <div class="d-md-flex align-items-center">
-                            <h5 class="card-title">NMAP Scans Result</h5>
+                            <h5 class="card-title">نتیجه اسکن‌های nmap</h5>
                         </div>
                         <br>
                         <div class="row">
@@ -72,10 +72,10 @@
                                             <span class="checkmark"></span>
                                         </label></th>
                                         <th>URL</th>
-                                        <th>Total Ports</th>
-                                        <th>Total Open Ports</th>
-                                        <th>Total Close Ports</th>
-                                        <th>Action</th>
+                                        <th>کل PORT ها</th>
+                                        <th>کل PORT های باز</th>
+                                        <th>کل PORT های بسته</th>
+                                        <th>اقدام</th>
                                     </tr>
                                     </thead>
                                     <tbody>{% for data in all_nmap %}
@@ -154,7 +154,7 @@
                             <!--XML</a>-->
                         <!--</div>-->
                         <!--<div class="buttons">-->
-                            <!--<button type="button" class="btn btn-danger btn-mini" onclick="">Delete Selected</button>-->
+                            <!--<button type="button" class="btn btn-danger btn-mini" onclick="">پاک کردن مورد انتخاب شده</button>-->
                         <!--</div>-->
                     <!--</div>-->
                     <!--<div class="widget-content nopadding">-->

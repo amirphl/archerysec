@@ -40,10 +40,10 @@
 
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"><a href="/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a
-                href="#" class="current">nmap List</a></div>
+        <div id="breadcrumb"><a href="/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> خانه</a> <a
+                href="#" class="current">لیست nmap</a></div>
 
-        <h1>nmap Scans Result</h1>
+        <h1>نتیجه اسکن nmap</h1>
     </div>
 
     <div class="container-fluid">
@@ -64,9 +64,9 @@
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
-                        <h5>nmap Scan List</h5>
+                        <h5>نتیجه اسکن nmap</h5>
                         <div class="buttons">
-                            <button type="button" class="btn btn-danger btn-mini" onclick="">Delete Selected</button>
+                            <button type="button" class="btn btn-danger btn-mini" onclick="">پاک کردن مورد انتخاب شده</button>
                         </div>
                     </div>
                     <div class="widget-content nopadding">
@@ -76,13 +76,13 @@
                                 <th><p><label><input type="checkbox" id="checkAll"/></label></p></th>
                                 <th>URL</th>
                                 <th>Port</th>
-                                <th>state</th>
-                                <th>version</th>
-                                <th>Service</th>
-                                <th>osfamily</th>
-                                <th>osgen</th>
+                                <th>وضعیت</th>
+                                <th>نسخه</th>
+                                <th>سرویس</th>
+                                <th>خانواده سیستم عامل</th>
+                                <th>نسل سیستم عامل</th>
                                 <th>cpe</th>
-                                <th>Action</th>
+                                <th>اقدام</th>
                             </tr>
                             </thead>
                             <tbody>{% for data in all_nmap %}

@@ -5,7 +5,7 @@
 <div id="content">{% for data in scan_result %}
     <div id="content-header">
         <div id="breadcrumb"><a href="/webscanners/web_vuln_list/?scan_id={{data.scan_id}}" title="Go to Home"
-                                class="tip-bottom"><i class="icon-home"></i> Vulnerability Details</a>
+                                class="tip-bottom"><i class="icon-home"></i> جزئیات آسیب پذیری</a>
             <a
                     href="#" class="current">{{ data.name }}</a></div>
         <div>
@@ -23,7 +23,7 @@
                     <!--class="icon-trash"></i> Delete</a></li>-->
                     <li>
                         <a href="/jira/submit_jira_ticket/?summary=SSLScan Result&description=Vulnerable URL: {{ data.scan_url }} %0a%0a SSLScan Output: {{ data.sslscan_output }} &scanner=SSLScan&vuln_id={{data.vuln_id}}&scan_id={{data.scan_id}} "><i
-                                class="icon-random"></i> Jira Ticket</a>
+                                class="icon-random"></i> تیکت Jira</a>
                     </li>
                 </ul>
             </div>

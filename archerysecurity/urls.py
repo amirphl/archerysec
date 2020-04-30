@@ -77,6 +77,7 @@ urlpatterns = [
 
     # Manual App
     url(r'^manual_scan/', include('manual_scan.urls')),
+    url(r'^vulners/', include('vulner_search.urls')),
 ]
 
 urlpatterns = urlpatterns + \

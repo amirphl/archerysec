@@ -1,0 +1,29 @@
+{% extends "vulner_search.html" %}
+{% load static %}
+
+{% block body %}
+    <div>
+        <table style="max-width: 90%;width: 100%;table-layout: fixed;text-align: center;text-overflow: ellipsis;white-space: pre-line;overflow: hidden">
+            <tbody>
+            <tr>
+                <th style="width: 8%;text-align: center">کد</th>
+                <th style="width: 8%;text-align: center">سطح</th>
+                <th style="width: 8%;text-align: center">پکیج</th>
+                <th style="width: 8%;text-align: center">رتبه آسیب‌‌پذیری</th>
+                <th style="width: 10%;text-align: center">تاریخ انتشار</th>
+                <th style="width: 14%;text-align: center">تاریخ به‌روز‌رسانی</th>
+                <th style="width: 14%;text-align: center">بسته‌های تحت تاثیر</th>
+                <th style="width: 15%;text-align: center">خلاصه توضیحات</th>
+                <th style="width: 15%;text-align: center">مراجع</th>
+            </tr>
+            {% for row in results %}
+                <tr>
+                    {% for col in row %}
+                        <td>{{ col }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

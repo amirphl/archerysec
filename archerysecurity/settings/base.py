@@ -74,7 +74,7 @@ INSTALLED_APPS = [
     'vFeedgui',
     'compliance',
     'notifications',
-
+    'vulner_search',
 ]
 
 MIDDLEWARE = [
